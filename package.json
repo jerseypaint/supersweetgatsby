@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "supersweetsites",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple site made with Gatsby and the Gatsby starter default theme",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Aaron",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.17.6",
@@ -46,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/jerseypaint/supersweetgatsby"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
