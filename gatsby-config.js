@@ -1,8 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Super Sweet Sites`,
+    description: `Amazing websites priced for small businesses.`,
+    author: `aaron`,
+    menuLinks:[
+      {
+        name:'services',
+        link:'/services'
+      },
+      {
+        name:'work',
+        link:'/work'
+      },
+      {
+        name:'contact',
+        link:'/contact'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -27,6 +41,29 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/
+        }
+      }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `p0k6vqctwrug`,
+        accessToken: `lPpVpMkAd5EeDU9vLGJj7ayoFWJ4EcM7Ah53j80Lix0`,
+      },
+      
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

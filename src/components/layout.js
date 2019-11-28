@@ -7,40 +7,37 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { Helmet } from "react-helmet"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
+
+class Crisp extends React.Component {
+  componentDidMount () {
+    window.$crisp=[];
+    window.CRISP_WEBSITE_ID="fd594c9c-47ec-4f5c-a47a-ad723321ae28";
+  }
+  render () {
+    return (
+      <>
+        <Helmet>
+          <script src="https://client.crisp.chat/l.js" />
+        </Helmet>
+      </>
+      )
+  }
+}
+
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
+      <Crisp />
+      <Header />
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+        <Footer />
     </>
   )
 }
