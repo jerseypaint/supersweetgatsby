@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Super Sweet Sites`,
-    description: `Amazing websites priced for small businesses.`,
+    description: `Amazing websites, priced for small businesses.`,
     author: `aaron`,
     menuLinks:[
       {
