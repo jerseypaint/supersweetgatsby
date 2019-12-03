@@ -8,15 +8,19 @@ import IconExpand from "../images/expand-alt.svg"
 import IconSeedling from "../images/hand-holding-seedling.svg"
 
 const Flex = styled.div`
+    position: relative;
+
     @media (min-width: 769px) {
         display: flex;
     }
 `
 
 const Feature = styled.div`
+    position: relative;
     margin: 1em;
     padding: 2em;
-    background-color: #0A1128;
+    border: 1px solid #DB2763;
+    z-index: 5;
 
     svg {
         height: 24px;
@@ -30,9 +34,21 @@ const Feature = styled.div`
     }
 `
 
+const Background = styled.div`
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 2em;
+  left: -2em;
+  background-color: #0A1128;
+  z-index: 1;
+`
+
 export default () => (
     <Section>
         <Flex>
+        <Background />
             <Feature>
                 <h3><IconBolt /> Fast</h3>
                 <p>Speed matters.  We work to decrease load times and increase user experience using eficient code and reliable hosting.</p>

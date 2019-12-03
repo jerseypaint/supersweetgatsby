@@ -8,11 +8,26 @@ import Button from "./button"
 import WorkInfo from "./work-info"
 
 const Card = styled.div`
-  background-color: #0A1128;
+  position: relative;
   width:95%;
   margin:0 auto;
 `
+const Background = styled.div`
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 2em;
+  left: -2em;
+  background-color: #0A1128;
+  z-index: 1;
+`
+
 const Grid = styled.div`
+  position: relative;
+  border: 1px solid #DB2763;
+  z-index: 3;
+
   @media (min-width:769px) {
     display: flex;
   }
@@ -33,7 +48,6 @@ const Top = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 2px solid #1E1528;
   
   h3 {
     margin: 0 .5em 0;
@@ -83,6 +97,7 @@ export default () => (
     <>
      <Section className={`work-card`}>
       <Card>
+      <Background />
         <Grid>
           <GridItem>
               <Top>

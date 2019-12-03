@@ -5,27 +5,32 @@ import { StaticQuery, graphql } from "gatsby"
 import Section from "./section"
 
 const Grid = styled.div`
+  position: relative;
+
   @media (min-width: 769px) {
     display: flex;
     align-items: flex-start;
   }
 `
 const Card = styled.div`
-  background-color: #0A1128;
+  position: relative;
   display: flex;
   flex-direction: column;
+  border: 1px solid #DB2763;
   margin: 1em 0;
+  z-index: 5;
 
   @media (min-width:769px) {
     width: calc(33% - 16px);
     margin: 0 16px;
   }
 `
+
 const Top = styled.div`
   position: relative;
   text-align: center;
   padding: 2em 2em;
-  border-bottom: 2px solid #34344A;
+  border-bottom: 1px solid #DB2763;
 
   h3 {margin:0;}
 `

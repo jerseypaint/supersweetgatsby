@@ -7,15 +7,32 @@ import Section from "./section"
 import WorkInfo from "./work-info"
 
 const Card = styled.div`
-  background-color: #0A1128;
+  position: relative;
   width:95%;
-  margin: 0 auto 3em;
+  margin:0 auto;
+  margin-bottom: 5em;
 `
+const Background = styled.div`
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 2em;
+  left: -2em;
+  background-color: #0A1128;
+  z-index: 1;
+`
+
 const Grid = styled.div`
+  position: relative;
+  border: 1px solid #DB2763;
+  z-index: 3;
+
   @media (min-width:769px) {
     display: flex;
   }
 `
+
 const GridItem = styled.div`
   .gatsby-image-wrapper {
     height: 100%;
@@ -77,6 +94,7 @@ export default () => (
      <Section className={`work-card`}>
       {data.allContentfulWork.edges.map(work => (
       <Card key={work.node.name}>
+        <Background key={work.node.name} />
         <Grid key={work.node.name} >
           <GridItem key={`${work.node.name}_1`}>
               <Bottom key={work.node.name}>

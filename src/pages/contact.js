@@ -34,7 +34,8 @@ const StyledCrispLink = styled(props => <CrispLink {...props} />)`
   padding: .5em 2em;
   border: none;
   border-radius: 0;
-  background-color: #0A1128;
+  border: 1px solid #DB2763;
+  background-color: transparent;
   color: hsla(100,100%,100%,0.7);
   font-size: 18px;
   font-weight: 700;
@@ -65,8 +66,8 @@ const StyledButton = styled.button`
   margin: 1em 0;
   padding: .5em 2em;
   border: none;
-  border-radius: 0;
-  background-color: #0A1128;
+  border: 1px solid #DB2763;
+  background-color: transparent;
   color: hsla(100,100%,100%,0.7);
   font-size: 18px;
   font-weight: 700;
@@ -97,7 +98,7 @@ const StyledLink = styled.a`
   padding: .5em 2em;
   border: none;
   border-radius: 0;
-  background-color: #0A1128;
+  border: 1px solid #DB2763;
   color: hsla(100,100%,100%,0.7);
   font-size: 18px;
   text-decoration:none;
