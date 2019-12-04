@@ -51,7 +51,7 @@ export default () => (
         <Background />
             <Feature>
                 <h3><IconBolt /> Fast</h3>
-                <p>Speed matters.  We work to decrease load times and increase user experience using eficient code and reliable hosting.</p>
+                <p>Speed matters.  We work to decrease load times and better user experience using efficient code and reliable hosting.</p>
             </Feature>
             <Feature>
                 <h3><IconExpand /> Responsive</h3>
@@ -59,7 +59,7 @@ export default () => (
             </Feature>
             <Feature>
                 <h3><IconSeedling /> Scalable</h3>
-                <p>As your business grows, your site can grow with it.. We make it easy for owners to update content and serve more users.</p>
+                <p>As your business grows, your site can grow with it. We make it easy for owners to update content and expand their websites - no coding necessary.</p>
             </Feature>
         </Flex>
     </Section>

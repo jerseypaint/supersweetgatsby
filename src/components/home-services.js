@@ -63,9 +63,9 @@ export default () => (
                 <p>
                 Most small businesses have few options when it comes to building their website.
                 <br /><br />
-                They can either build it themselves using sites like Wix or they can hire Tommy - you know, Cheryl’s son who’s good with computers and just finished taking  a Computer Science course at his high school.
+                They can either build it themselves using sites like Wix or they can hire Tommy - you know, Cheryl’s son who’s good with computers and just his high school's Computer Science course.
                 <br /><br />
-                We believe small businesses deserve better, so we offer them better, amazing websites, at a price that is clear and affordable.
+                We believe small businesses deserve better, so we offer them better - building small business owners amazing websites, at a price that is clear and affordable.
                 </p>
             </Content>
             <Features>

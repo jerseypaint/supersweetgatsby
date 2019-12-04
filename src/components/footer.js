@@ -132,7 +132,7 @@ const Footer = () => {
                         </ul>
                     </Socials>
                 </Grid>
-                <SaleTag>Site built by us using <a href={`https://www.gatsbyjs.org/`}>Gatsby</a>, <a href={`https://www.contentful.com/`}>Contentful</a>, and <a href={`https://www.netlify.com/`}>Netlify</a>.</SaleTag>
+                <SaleTag>We built this website with <a href={`https://www.gatsbyjs.org/`}>Gatsby</a> + <a href={`https://www.contentful.com/`}>Contentful</a> + <a href={`https://www.netlify.com/`}>Netlify</a>.</SaleTag>
             </Container>
         </SiteFooter>
     )

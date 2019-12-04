@@ -14,7 +14,7 @@ const ServicesPage = () => (
   <Layout>
     <SEO title="Services" />
     <Hero 
-      title={`Building your latest website with the lates technologies`}
+      title={`Building your latest website with the latest technologies`}
       subtitle={`Mordern Web Development & Hosting`}
       body={`We build websites that business owners and their customers love.
       Put your business on the digital map with a website that is sure to impress.`}>

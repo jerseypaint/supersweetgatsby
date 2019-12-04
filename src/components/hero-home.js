@@ -15,7 +15,7 @@ export default () => (
      <Section className={`hero-home`} style={{ paddingBottom: 0}}>
       <Content>
         <h2>Sites priced right.</h2>
-        <p>We build amzing websites for small businesses that are easy to use and affordable.</p>
+        <p>We build amazing websites for small businesses. Websites they can use without an in-house developer and for a price they can afford.</p>
       </Content>
     </Section>
     </>

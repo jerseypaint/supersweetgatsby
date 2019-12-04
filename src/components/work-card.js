@@ -48,6 +48,7 @@ const Top = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #DB2763;
   
   h3 {
     margin: 0 .5em 0;
