@@ -81,7 +81,7 @@ export default () => (
                     <Check />
                     <p><Bold>We offer hosting and website management too.</Bold> We take care of security and uptime so that you can take of your business.</p>
                 </Item>
-                <Button to="/" content="Find out more" />
+                <Button to="/services" content="Find out more" />
             </Features>
         </Flex>
     </Section>
