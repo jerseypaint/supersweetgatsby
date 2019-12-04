@@ -47,6 +47,7 @@ const TextArea = styled.textarea`
   border: 2px solid #0A1128;
   border-radius: 0;
   background-color: #34344A;
+  color: hsla(100,100%,100%,0.7);
   padding: 8px;
   width: 100%;
   flex: 1 1;
@@ -76,8 +77,9 @@ const Button = styled.button`
 `
 
 const ContactForm = (props) => (
-  <Form method="post" netlify-honeypot="bot-field" data-netlify="true" id={props.id} className={props.className} >
+  <Form name={props.name} method="post" netlify-honeypot="bot-field" data-netlify="true" id={props.name} className={props.className} >
     <Input type="hidden" name="bot-field" />
+    <Input type="hidden" name="form-name" value={props.name} />
     <Label>
       <p>Name:</p>
       <Input type="text" name="name" id="name" placeholder="John Doe" />
