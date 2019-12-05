@@ -33,15 +33,11 @@ const Grid = styled.div`
   }
 `
 const GridItem = styled.div`
-  .gatsby-image-wrapper {
-    min-height: 300px;
-    height: 80%;
-  }
+  &:nth-of-type(2) {
+    padding: 1em .5em;
 
-  @media (min-width:769px) {
-    width: 50%;
-
-    &:nth-of-type(2) {
+    @media (min-width:769px) {
+      padding: 0;
       display: flex;
       align-items: center;
 
@@ -49,6 +45,14 @@ const GridItem = styled.div`
         width: calc(100% - 1em);
       }
     }
+  }
+
+  @media (min-width:769px) {
+    width: 50%;
+  }
+  .gatsby-image-wrapper {
+    min-height: 200px;
+    height: 80%;
   }
 `
 
