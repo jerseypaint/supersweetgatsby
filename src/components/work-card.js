@@ -34,11 +34,21 @@ const Grid = styled.div`
 `
 const GridItem = styled.div`
   .gatsby-image-wrapper {
-    height: 100%;
     min-height: 300px;
+    height: 80%;
   }
+
   @media (min-width:769px) {
     width: 50%;
+
+    &:nth-of-type(2) {
+      display: flex;
+      align-items: center;
+
+      .gatsby-image-wrapper {
+        width: calc(100% - 1em);
+      }
+    }
   }
 `
 
@@ -75,7 +85,7 @@ export default () => (
             description
           }
           featuredImage {
-            fluid {
+            fluid (maxWidth: 1000, maxHeight: 600){
               sizes
               src
               srcSet
