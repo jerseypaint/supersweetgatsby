@@ -150,7 +150,7 @@ export default props =>(
     <Grid>
     <ButtonWrap>
       <StyledLink href={`https://calendly.com/super-sweet-sites/15min`} target={`_blank`}>Schedule a 15 minute call <CalendarIcon /></StyledLink>
-      <StyledCrispLink>Chat now with one of our teammates <ChatIcon /></StyledCrispLink>
+      {/* StyledCrispLink>Chat now with one of our teammates <ChatIcon /></StyledCrispLink> */}
       <ShowFormButton />
     </ButtonWrap>
     <StyledForm name={`contact-form`} />
