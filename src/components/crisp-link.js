@@ -7,16 +7,6 @@ class CrispLink extends React.Component {
       this.openCrisp = this.openCrisp.bind(this);
     }
   
-    componentDidMount() {
-      window.$crisp=[];
-      window.CRISP_WEBSITE_ID="fd594c9c-47ec-4f5c-a47a-ad723321ae28";
-      window.addEventListener('load', this.openCrisp);
-   }
-  
-   componentWillUnmount() {
-     window.removeEventListener('load', this.openCrisp);
-    }
-  
     openCrisp(e) {
       e.preventDefault();
       (function() {

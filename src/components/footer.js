@@ -109,6 +109,7 @@ const Footer = () => {
             <Container>
                 <Grid>
                     <Link to={`/`} className="footer-logo" ><Img fixed={data.image.childImageSharp.fixed} alt="super sweet sites logo" /></Link>
+                    {/* Hide until we get some good social media going
                     <Menu>
                         <h3>Menu</h3>
                         <ul>
@@ -131,6 +132,7 @@ const Footer = () => {
                             <li></li>
                         </ul>
                     </Socials>
+                            */}
                 </Grid>
                 <SaleTag>We built this website with <a href={`https://www.gatsbyjs.org/`}>Gatsby</a> + <a href={`https://www.contentful.com/`}>Contentful</a> + <a href={`https://www.netlify.com/`}>Netlify</a>.</SaleTag>
             </Container>

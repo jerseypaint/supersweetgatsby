@@ -11,7 +11,7 @@ import EmailIcon from "../images/envelope.svg"
 
 const ButtonWrap = styled.div`
   display: block;
-  margin: 0;
+  margin: 0 0 2em 0;
 
   @media (min-width: 769px) {
     flex: 1 1;
@@ -19,7 +19,8 @@ const ButtonWrap = styled.div`
   }
 `
 
-const Grid = styled.div`
+const Grid = styled.div` 
+  padding-top: 50px;
   @media (min-width: 769px) {
     display: flex;
   }
@@ -150,7 +151,7 @@ export default props =>(
     <Grid>
     <ButtonWrap>
       <StyledLink href={`https://calendly.com/super-sweet-sites/15min`} target={`_blank`}>Schedule a 15 minute call <CalendarIcon /></StyledLink>
-      {/* StyledCrispLink>Chat now with one of our teammates <ChatIcon /></StyledCrispLink> */}
+      <StyledCrispLink>Chat now with one of our teammates <ChatIcon /></StyledCrispLink>
       <ShowFormButton />
     </ButtonWrap>
     <StyledForm name={`contact-form`} />
