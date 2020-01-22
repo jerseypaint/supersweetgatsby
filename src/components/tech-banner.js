@@ -18,9 +18,10 @@ const Flex = styled.div`
     svg {
         fill: #fff;
         height: 100%;
-        min-height: 100%;
         width: calc(50% - 2em);
+        min-height: 100%;
         max-height: 60px;
+        min-width: calc( 16% - 2em);
         margin: 1em;
 
         &:nth-of-type(1) {
@@ -42,7 +43,7 @@ const Flex = styled.div`
 `
 
 export default () => (
-    <Section>
+    <Section className={`tech-banner`}>
         <Flex>
             <WordPressLogo />
             <ShopifyLogo />
