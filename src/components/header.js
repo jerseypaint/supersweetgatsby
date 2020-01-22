@@ -167,7 +167,7 @@ const Header = () => {
               ))}
             </ul>
           </Nav>
-          <MenuButton onClick={handleClick}>
+          <MenuButton onClick={handleClick} name={`menu toggle`} type={`button`}>
             <span />
             <span />
           </MenuButton>

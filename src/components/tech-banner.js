@@ -18,6 +18,7 @@ const Flex = styled.div`
     svg {
         fill: #fff;
         height: 100%;
+        min-height: 100%;
         width: calc(50% - 2em);
         max-height: 60px;
         margin: 1em;
