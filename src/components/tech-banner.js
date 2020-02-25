@@ -32,7 +32,7 @@ const Flex = styled.div`
     }
 
     @media (min-width: 769px){
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
 
         svg {

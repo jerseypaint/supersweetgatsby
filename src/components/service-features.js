@@ -16,6 +16,7 @@ const Flex = styled.div`
 `
 
 const Feature = styled.div`
+    flex: 1 1;
     position: relative;
     margin: 1em;
     padding: 2em;
