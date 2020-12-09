@@ -34,6 +34,28 @@ module.exports = {
         name:'contact',
         link:'/contact'
       }
+    ],
+    footerLinks:[
+      {
+        name:'services',
+        link:'/services'
+      },
+      {
+        name:'work',
+        link:'/work'
+      },
+      {
+        name:'contact',
+        link:'/contact'
+      },
+      {
+        name:'privacy',
+        link:'/privacy'
+      },
+      {
+        name:'tos',
+        link:'/terms'
+      }
     ]
   },
   plugins: [

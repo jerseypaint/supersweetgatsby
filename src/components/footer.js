@@ -34,9 +34,11 @@ const Menu = styled.div`
 
     ul {
         margin: 0;
+        display: flex;
 
         li {
             list-style: none;
+            margin-right: 1em;
 
             a {
                 color: hsla(100,100%,100%,0.7);
@@ -88,7 +90,7 @@ const Footer = () => {
         site {
           siteMetadata {
             title
-            menuLinks {
+            footerLinks {
               name
               link
             }
@@ -109,11 +111,9 @@ const Footer = () => {
             <Container>
                 <Grid>
                     <Link to={`/`} className="footer-logo" ><Img fixed={data.image.childImageSharp.fixed} alt="super sweet sites logo" /></Link>
-                    {/* Hide until we get some good social media going
                     <Menu>
-                        <h3>Menu</h3>
                         <ul>
-                            {data.site.siteMetadata.menuLinks.map(link => (
+                            {data.site.siteMetadata.footerLinks.map(link => (
                                 <li
                                 key={link.name}
                                 >
@@ -124,15 +124,6 @@ const Footer = () => {
                             ))}
                         </ul>
                     </Menu>
-                    <Socials>
-                        <h3>Socials</h3>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </Socials>
-                            */}
                 </Grid>
                 <SaleTag>We built this website with <a href={`https://www.gatsbyjs.org/`}>Gatsby</a> + <a href={`https://www.contentful.com/`}>Contentful</a> + <a href={`https://www.netlify.com/`}>Netlify</a>.</SaleTag>
             </Container>
