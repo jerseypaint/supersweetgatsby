@@ -31,7 +31,7 @@ export default () => (
         <Content>
             <Subtitle content="Keeping it transparent" />
             <h2>Dead simple pricing</h2>
-            <p>Nothing too fancy here, $500 for the first template then $350 for every template after that. We add in common features for free like contact forms and connecting a CMS.</p>
+            <p>Nothing too fancy here, $500 for every template we build. We add in common features for free like contact forms and connecting a CMS.</p>
         </Content>
         <Cards />
         <CTA>
